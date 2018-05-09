@@ -1,0 +1,145 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "muli";
+  background: url('../images/creative.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display:flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: stretch;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 60vw;
+  height: 70vh;
+  font-family: inherit;
+  border: 1px solid;
+  border-color: #333;
+
+}
+.login__showcase{
+  flex: 0 0 auto;
+  width: 50%;
+  background-color: #424242;
+  height: 100%;
+  font-family: inherit;
+  opacity: 0.95;
+}
+.login__content{
+  flex:0 0 auto;
+  padding: 20px;
+  width: 50%;
+  box-sizing: border-box;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  opacity: 0.95;
+}
+.login__content h2{
+  font-size: 20px;
+  font-weight: 300;
+  color: #333;
+}
+.login__content a{
+  text-decoration: none;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+.login__content a:hover{
+  color: #777;
+}
+
+.form-group{
+  margin: 0 auto;
+  display: block;
+  margin-bottom:10px;
+  position: relative;
+  font-family: inherit;
+  width: 100%;
+ 
+}
+.form-control{
+  display: block;
+  padding: 14px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(177, 176, 176, 0.8);
+  font-family: inherit;
+  font-size: 12px;
+  background-color: transparent;
+}
+label{
+  position: absolute;
+  top: 9px;
+  /* transform: translateY(-30px); */
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  pointer-events: none;
+  transition: .5s ease;
+}
+
+.form-group .form-control:focus ~ label{
+  top: -5px;
+  left: 0;
+  font-size: 10px;
+  color: #777;
+}
+
+.label-top{
+	top: -5px;
+	font-size: 10px !important;
+	color: #777;
+}
+.form-control:focus{
+  outline: none;
+}
+.btn{
+  font-size: 14px;
+  box-sizing: border-box;
+  width:50%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(to left, #3D5AFE, #2962FF);
+  font-family: inherit;
+  margin-top: 50px;
+  color: #fff !important;
+  text-align: center;
+  text-decoration: none;
+}
+.btn:hover{
+   background: linear-gradient(to left, #536DFE, #448AFF);
+}
+.btn:focus{
+  outline: none;
+}
+
+.btn_signup{
+  margin-top: 15px;
+  padding: 10px 5px;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 550;
+  
+}
+.btn_signup:hover{
+  border-bottom: 2px solid #2962FF;
+}
+.btn_signup:focus{
+  outline: none;
+}

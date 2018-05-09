@@ -1,0 +1,215 @@
+.product-price {
+  float: left;
+  margin-left: 55%;
+}
+
+.product-quantity {
+  float: left;
+  width: 10%;
+  margin-left: 30px;
+}
+
+.product-line-price {
+  float: left;
+  width: 12%;
+  text-align: right;
+  margin-left: 20px;
+}
+
+/* This is used as the traditional .clearfix class */
+.group:before, .shopping-cart:before, .column-labels:before, .product:before, .totals-item:before,
+.group:after,
+.shopping-cart:after,
+.column-labels:after,
+.product:after,
+.totals-item:after {
+  content: '';
+  display: table;
+}
+
+.group:after, .shopping-cart:after, .column-labels:after, .product:after, .totals-item:after {
+  clear: both;
+}
+
+.group, .shopping-cart, .column-labels, .product, .totals-item {
+  zoom: 1;
+}
+
+/* Apply clearfix in a few places */
+/* Apply dollar signs */
+.product .product-price:before, .product .product-line-price:before, .totals-value:before {
+  content: '$';
+}
+
+/* Body/Header stuff */
+body {
+  padding: 0px 30px 30px 20px;
+  font-family: 'Muli';
+  font-weight: 100;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+label {
+  color: #aaa;
+}
+
+
+/* Column headers */
+.column-labels label {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.column-labels .product-image, .column-labels .product-details, .column-labels .product-removal {
+  text-indent: -9999px;
+}
+
+/* Product entries */
+.product {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-top: 120px;
+  border-bottom: 1px solid #eee;
+}
+.product img{
+  width: 90%;
+  border-radius: 5px;
+}
+
+.product .product-quantity input {
+  width: 40px;
+  border-radius: 2px;
+  background: transparent;
+}
+.product .remove-product {
+  border: 0;
+  padding: 4px 8px;
+  background-color: #c66;
+  color: #fff;
+  font-family: "Muli";
+  font-size: 12px;
+  border-radius: 3px;
+}
+.product .remove-product:hover {
+  background-color: #a44;
+}
+
+/* Totals section */
+.totals .totals-item {
+  float: right;
+  clear: both;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.totals .totals-item label {
+  float: left;
+  clear: both;
+  width: 79%;
+  text-align: right;
+}
+.totals .totals-item .totals-value {
+  float: right;
+  width: 21%;
+  text-align: right;
+}
+.totals .totals-item-total {
+  font-family: 'Muli';
+}
+
+.checkout {
+  float: right;
+  border: #fff;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: #304FFE;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.checkout:hover{
+  text-decoration: none;
+  color: #fff;
+   font-weight: 300;
+}
+
+
+/* Make adjustments for tablet */
+@media screen and (max-width: 650px) {
+  .shopping-cart {
+    margin: 0;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  .column-labels {
+    display: none;
+  }
+
+  .product-image {
+    float: right;
+    width: auto;
+  }
+  .product-image img {
+    margin: 0 0 10px 10px;
+  }
+
+  .product-details {
+    float: none;
+    margin-bottom: 10px;
+    width: auto;
+  }
+
+  .product-price {
+    clear: both;
+    width: 70px;
+  }
+
+  .product-quantity {
+    width: 100px;
+  }
+  .product-quantity input {
+    margin-left: 20px;
+  }
+
+  .product-quantity:before {
+    content: 'x';
+  }
+
+  .product-removal {
+    width: auto;
+  }
+
+  .product-line-price {
+    float: right;
+    width: 70px;
+  }
+}
+/* Make more adjustments for phone */
+@media screen and (max-width: 350px) {
+  .product-removal {
+    float: right;
+  }
+
+  .product-line-price {
+    float: right;
+    clear: left;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  .product .product-line-price:before {
+    content: 'Item Total: $';
+  }
+
+  .totals .totals-item label {
+    width: 60%;
+  }
+  .totals .totals-item .totals-value {
+    width: 40%;
+  }
+}

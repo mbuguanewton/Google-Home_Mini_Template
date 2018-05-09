@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="bower_components/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    
+    <nav id="my_navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="navbar-brand" class="navbar-brand" href="index.html">Tech-Junkie</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li>
+                        <a href="#">overview</a>
+                    </li>
+                    <li>
+                        <a href="#">contact</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-shopping-cart"></i><span class="cart">cart</span></a>
+                    </li>
+                    <li>
+                        <a><i id="user" aria-hidden="true" class="fa fa-user"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    
+    <!-- end of navigation bar -->
+<section class="product">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="product-image">
+                    <img src="images/colored-mini.png">
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="shopping-cart">
+                
+                    <div class="column-labels">
+                        <label class="product-price">Price</label>
+                        <label class="product-quantity">Quantity</label>
+                        <label class="product-line-price">Total</label>
+                    </div>
+                
+                    <div class="product">
+                        <div id="product_price"class="product-price">50.00</div>
+                        <div class="product-quantity">
+                            <input id="number" type="number" value="1" min="1">
+                        </div>
+                        <div id="line_price" class="product-line-price">50</div>
+                    </div>
+                
+                
+                    <div class="totals">
+                        <div class="totals-item">
+                            <label>Subtotal</label>
+                            <div class="totals-value" id="cart-subtotal">50.00</div>
+                        </div>
+                        <div class="totals-item">
+                            <label>Shipping</label>
+                            <div class="totals-value" id="cart-shipping">20.00</div>
+                        </div>
+                        <div class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <div class="totals-value" id="cart-total">70.00</div>
+                        </div>
+                    </div>
+                
+                    <buttnon id="checkout"  class="checkout" onclick="return checkOut()">Checkout</button>
+                
+                </div>
+            </div>
+    </div>
+    
+   
+</section>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
