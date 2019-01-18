@@ -1,9 +1,11 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 html{
-    margin: 0;
-    padding: 0;
+    
+    font-family: 'Muli';
 }
 body{
     font-family: 'Muli';
@@ -392,9 +394,10 @@ h1,h2,h3,h4,h5,h6{
     color: #777;
 }
 #footer .fa-title{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     margin-left: 5px;
+    font-family: 'Muli'
 }
 
 /* end of styling the footer */

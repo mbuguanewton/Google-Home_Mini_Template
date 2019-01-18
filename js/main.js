@@ -144,18 +144,6 @@ document.addEventListener('change', ()=>{
 });
 // end of keeping labels top after focus
 
-// enable pop up after click on user
-document.getElementById('user').addEventListener('click', function () {
-    var popup = document.getElementById('popup');
-    // if(popup.style.display == 'none'){
-    //  popup.style.display = 'block';
-    // }else{
-    //     popup.style.display = 'none';
-    // }
-    (popup.style.display == 'none') ? popup.style.display = 'block' : popup.style.display = 'none';
-
-});
-//end of pop up 
 
 
 
@@ -263,9 +251,3 @@ $('a[href*="#"]')
 
 // button in showcase//
 
-
-setTimeout(function () {
-    document.getElementById('buy-now').addEventListener('click', function () {
-        this.innerHTML = "added to cart";
-    })
-}, 3000);
