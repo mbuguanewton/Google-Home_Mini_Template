@@ -1,4 +1,8 @@
-import { config } from './config'
+console.log("Main.js loaded...");
+
+import config from './config';
+
+//var config = require('./config');
 
 // Initialize Firebase
 firebase.initializeApp(config);
@@ -151,11 +155,7 @@ document.getElementById('user').addEventListener('click', function () {
 });
 //end of pop up 
 
-
-
-
 // animation using scroll reveal js
-
 window.sr = ScrollReveal();
     sr.reveal('.navbar', {
         duration: 500,

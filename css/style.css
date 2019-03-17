@@ -350,15 +350,16 @@ h1,h2,h3,h4,h5,h6{
 #footer a{
     background: transparent;
 }
-#footer i.fa{
+#footer i.fab{
     color: #f2f2f2;
 }
-#footer i.fa:hover{
+#footer i.fab:hover{
     color: #777;
 }
-#footer .fa-title{
-    font-size: 12px;
+#footer .fab-title{
+    font-size: 14px;
     font-weight: 300;
-    margin-left: 5px;
+    margin-left: 10px;
+    font-family: 'Muli', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
