@@ -1,15 +1,11 @@
-console.log("Main.js loaded...");
-
-import config from './config';
+import config from "./config";
 
 //var config = require('./config');
 
 // Initialize Firebase
 firebase.initializeApp(config);
 
-
 // reference messages 
-
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
