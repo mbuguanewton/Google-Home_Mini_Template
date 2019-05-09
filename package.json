@@ -1,0 +1,23 @@
+{
+  "name": "google-home",
+  "version": "1.0.0",
+  "description": "Google home mini overview website",
+  "main": "main.js",
+  "dependencies": {
+    "scrollreveal": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newtfrank/Google-Home_Mini_Template.git"
+  },
+  "author": "Newton Mbugua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newtfrank/Google-Home_Mini_Template/issues"
+  },
+  "homepage": "https://github.com/newtfrank/Google-Home_Mini_Template#readme"
+}
