@@ -1,4 +1,11 @@
-
+const config = {
+  apiKey: "AIzaSyBemlod2M5RxpAI4_J8k2pzIeUrvfUIjo4",
+  authDomain: "tech-junkie.firebaseapp.com",
+  databaseURL: "https://tech-junkie.firebaseio.com",
+  projectId: "tech-junkie",
+  storageBucket: "tech-junkie.appspot.com",
+  messagingSenderId: "886544945024"
+};
 // Initialize Firebase
 firebase.initializeApp(config);
 
